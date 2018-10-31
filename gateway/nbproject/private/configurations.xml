@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="base">
+      </df>
+      <df name="cmake">
+      </df>
+      <df name="conf">
+        <df name="config.d">
+        </df>
+        <df name="syslog-ng">
+        </df>
+      </df>
+      <df name="doc">
+      </df>
+      <df name="dtd">
+      </df>
+      <df name="src">
+        <df name="belkin">
+          <in>BelkinWemoBulb.cpp</in>
+          <in>BelkinWemoBulb.h</in>
+          <in>BelkinWemoDevice.cpp</in>
+          <in>BelkinWemoDevice.h</in>
+          <in>BelkinWemoDeviceManager.cpp</in>
+          <in>BelkinWemoDeviceManager.h</in>
+          <in>BelkinWemoDimmer.cpp</in>
+          <in>BelkinWemoDimmer.h</in>
+          <in>BelkinWemoLink.cpp</in>
+          <in>BelkinWemoLink.h</in>
+          <in>BelkinWemoStandaloneDevice.cpp</in>
+          <in>BelkinWemoStandaloneDevice.h</in>
+          <in>BelkinWemoSwitch.cpp</in>
+          <in>BelkinWemoSwitch.h</in>
+        </df>
+        <df name="bluetooth">
+          <df name="dbus">
+          </df>
+          <in>BLESmartDevice.cpp</in>
+          <in>BLESmartDevice.h</in>
+          <in>BLESmartDeviceManager.cpp</in>
+          <in>BLESmartDeviceManager.h</in>
+          <in>BeeWiDevice.cpp</in>
+          <in>BeeWiDevice.h</in>
+          <in>BeeWiSmartClim.cpp</in>
+          <in>BeeWiSmartClim.h</in>
+          <in>BeeWiSmartDoor.cpp</in>
+          <in>BeeWiSmartDoor.h</in>
+          <in>BeeWiSmartLite.cpp</in>
+          <in>BeeWiSmartLite.h</in>
+          <in>BeeWiSmartMotion.cpp</in>
+          <in>BeeWiSmartMotion.h</in>
+          <in>BeeWiSmartWatt.cpp</in>
+          <in>BeeWiSmartWatt.h</in>
+          <in>BluetoothAvailabilityManager.cpp</in>
+          <in>BluetoothAvailabilityManager.h</in>
+          <in>BluetoothDevice.cpp</in>
+          <in>BluetoothDevice.h</in>
+          <in>BluezHciInterface.cpp</in>
+          <in>BluezHciInterface.h</in>
+          <in>DBusHciConnection.cpp</in>
+          <in>DBusHciConnection.h</in>
+          <in>DBusHciInterface.cpp</in>
+          <in>DBusHciInterface.h</in>
+          <in>GlibPtr.h</in>
+          <in>HciConnection.cpp</in>
+          <in>HciConnection.h</in>
+          <in>HciInfo.cpp</in>
+          <in>HciInfo.h</in>
+          <in>HciInfoReporter.cpp</in>
+          <in>HciInfoReporter.h</in>
+          <in>HciInterface.cpp</in>
+          <in>HciInterface.h</in>
+          <in>HciListener.cpp</in>
+          <in>HciListener.h</in>
+          <in>HciUtil.cpp</in>
+          <in>HciUtil.h</in>
+          <in>RevogiDevice.cpp</in>
+          <in>RevogiDevice.h</in>
+          <in>RevogiRGBLight.cpp</in>
+          <in>RevogiRGBLight.h</in>
+          <in>RevogiSmartCandle.cpp</in>
+          <in>RevogiSmartCandle.h</in>
+          <in>RevogiSmartLite.cpp</in>
+          <in>RevogiSmartLite.h</in>
+          <in>RevogiSmartPlug.cpp</in>
+          <in>RevogiSmartPlug.h</in>
+          <in>TabuLumenSmartLite.cpp</in>
+          <in>TabuLumenSmartLite.h</in>
+        </df>
+        <df name="commands">
+          <in>DeviceAcceptCommand.cpp</in>
+          <in>DeviceAcceptCommand.h</in>
+          <in>DeviceSetValueCommand.cpp</in>
+          <in>DeviceSetValueCommand.h</in>
+          <in>DeviceUnpairCommand.cpp</in>
+          <in>DeviceUnpairCommand.h</in>
+          <in>DeviceUnpairResult.cpp</in>
+          <in>DeviceUnpairResult.h</in>
+          <in>GatewayListenCommand.cpp</in>
+          <in>GatewayListenCommand.h</in>
+          <in>NewDeviceCommand.cpp</in>
+          <in>NewDeviceCommand.h</in>
+          <in>ServerDeviceListCommand.cpp</in>
+          <in>ServerDeviceListCommand.h</in>
+          <in>ServerDeviceListResult.cpp</in>
+          <in>ServerDeviceListResult.h</in>
+          <in>ServerLastValueCommand.cpp</in>
+          <in>ServerLastValueCommand.h</in>
+          <in>ServerLastValueResult.cpp</in>
+          <in>ServerLastValueResult.h</in>
+        </df>
+        <df name="core">
+          <in>AbstractCollector.cpp</in>
+          <in>AbstractCollector.h</in>
+          <in>AbstractDistributor.cpp</in>
+          <in>AbstractDistributor.h</in>
+          <in>AbstractSeeker.cpp</in>
+          <in>AbstractSeeker.h</in>
+          <in>Answer.cpp</in>
+          <in>Answer.h</in>
+          <in>AnswerQueue.cpp</in>
+          <in>AnswerQueue.h</in>
+          <in>AsyncCommandDispatcher.cpp</in>
+          <in>AsyncCommandDispatcher.h</in>
+          <in>BasicDistributor.cpp</in>
+          <in>BasicDistributor.h</in>
+          <in>Command.cpp</in>
+          <in>Command.h</in>
+          <in>CommandDispatcher.cpp</in>
+          <in>CommandDispatcher.h</in>
+          <in>CommandDispatcherListener.cpp</in>
+          <in>CommandDispatcherListener.h</in>
+          <in>CommandHandler.cpp</in>
+          <in>CommandHandler.h</in>
+          <in>CommandSender.cpp</in>
+          <in>CommandSender.h</in>
+          <in>DeviceCache.cpp</in>
+          <in>DeviceCache.h</in>
+          <in>DeviceManager.cpp</in>
+          <in>DeviceManager.h</in>
+          <in>DeviceStatusFetcher.cpp</in>
+          <in>DeviceStatusFetcher.h</in>
+          <in>DeviceStatusHandler.cpp</in>
+          <in>DeviceStatusHandler.h</in>
+          <in>Distributor.cpp</in>
+          <in>Distributor.h</in>
+          <in>DistributorListener.cpp</in>
+          <in>DistributorListener.h</in>
+          <in>DongleDeviceManager.cpp</in>
+          <in>DongleDeviceManager.h</in>
+          <in>Exporter.cpp</in>
+          <in>Exporter.h</in>
+          <in>ExporterQueue.cpp</in>
+          <in>ExporterQueue.h</in>
+          <in>FilesystemDeviceCache.cpp</in>
+          <in>FilesystemDeviceCache.h</in>
+          <in>GatewayInfo.cpp</in>
+          <in>GatewayInfo.h</in>
+          <in>LoggingCollector.cpp</in>
+          <in>LoggingCollector.h</in>
+          <in>MemoryDeviceCache.cpp</in>
+          <in>MemoryDeviceCache.h</in>
+          <in>PrefixCommand.cpp</in>
+          <in>PrefixCommand.h</in>
+          <in>QueuingDistributor.cpp</in>
+          <in>QueuingDistributor.h</in>
+          <in>QueuingExporter.cpp</in>
+          <in>QueuingExporter.h</in>
+          <in>Result.cpp</in>
+          <in>Result.h</in>
+          <in>TestingCenter.cpp</in>
+          <in>TestingCenter.h</in>
+          <in>Version.h</in>
+        </df>
+        <df name="credentials">
+          <in>Credentials.cpp</in>
+          <in>Credentials.h</in>
+          <in>CredentialsStorage.cpp</in>
+          <in>CredentialsStorage.h</in>
+          <in>CredentialsTool.cpp</in>
+          <in>CredentialsTool.h</in>
+          <in>FileCredentialsStorage.cpp</in>
+          <in>FileCredentialsStorage.h</in>
+          <in>PasswordCredentials.cpp</in>
+          <in>PasswordCredentials.h</in>
+          <in>PinCredentials.cpp</in>
+          <in>PinCredentials.h</in>
+        </df>
+        <df name="exporters">
+          <in>InMemoryQueuingStrategy.cpp</in>
+          <in>InMemoryQueuingStrategy.h</in>
+          <in>JournalQueuingStrategy.cpp</in>
+          <in>JournalQueuingStrategy.h</in>
+          <in>MosquittoExporter.cpp</in>
+          <in>MosquittoExporter.h</in>
+          <in>NamedPipeExporter.cpp</in>
+          <in>NamedPipeExporter.h</in>
+          <in>QueuingStrategy.cpp</in>
+          <in>QueuingStrategy.h</in>
+          <in>RecoverableJournalQueuingStrategy.cpp</in>
+          <in>RecoverableJournalQueuingStrategy.h</in>
+        </df>
+        <df name="fitp">
+          <in>FitpDevice.cpp</in>
+          <in>FitpDevice.h</in>
+          <in>FitpDeviceManager.cpp</in>
+          <in>FitpDeviceManager.h</in>
+        </df>
+        <df name="hotplug">
+          <in>AbstractHotplugMonitor.cpp</in>
+          <in>AbstractHotplugMonitor.h</in>
+          <in>HotplugEvent.cpp</in>
+          <in>HotplugEvent.h</in>
+          <in>HotplugListener.cpp</in>
+          <in>HotplugListener.h</in>
+          <in>PipeHotplugMonitor.cpp</in>
+          <in>PipeHotplugMonitor.h</in>
+          <in>UDevMonitor.cpp</in>
+          <in>UDevMonitor.h</in>
+        </df>
+        <df name="iqrf">
+          <df name="request">
+            <in>DPACoordBondNodeRequest.cpp</in>
+            <in>DPACoordBondNodeRequest.h</in>
+            <in>DPACoordBondedNodesRequest.cpp</in>
+            <in>DPACoordBondedNodesRequest.h</in>
+            <in>DPACoordClearAllBondsRequest.cpp</in>
+            <in>DPACoordClearAllBondsRequest.h</in>
+            <in>DPACoordDiscoveryRequest.cpp</in>
+            <in>DPACoordDiscoveryRequest.h</in>
+            <in>DPACoordRemoveNodeRequest.cpp</in>
+            <in>DPACoordRemoveNodeRequest.h</in>
+            <in>DPANodeRemoveBondRequest.cpp</in>
+            <in>DPANodeRemoveBondRequest.h</in>
+            <in>DPAOSBatchRequest.cpp</in>
+            <in>DPAOSBatchRequest.h</in>
+            <in>DPAOSPeripheralInfoRequest.cpp</in>
+            <in>DPAOSPeripheralInfoRequest.h</in>
+            <in>DPAOSRestartRequest.cpp</in>
+            <in>DPAOSRestartRequest.h</in>
+          </df>
+          <df name="response">
+            <in>DPACoordBondNodeResponse.cpp</in>
+            <in>DPACoordBondNodeResponse.h</in>
+            <in>DPACoordBondedNodesResponse.cpp</in>
+            <in>DPACoordBondedNodesResponse.h</in>
+            <in>DPACoordRemoveNodeResponse.cpp</in>
+            <in>DPACoordRemoveNodeResponse.h</in>
+            <in>DPAOSPeripheralInfoResponse.cpp</in>
+            <in>DPAOSPeripheralInfoResponse.h</in>
+          </df>
+          <in>DPAMessage.cpp</in>
+          <in>DPAMessage.h</in>
+          <in>DPARequest.cpp</in>
+          <in>DPARequest.h</in>
+          <in>DPAResponse.cpp</in>
+          <in>DPAResponse.h</in>
+          <in>IQRFJsonMessage.cpp</in>
+          <in>IQRFJsonMessage.h</in>
+          <in>IQRFJsonRequest.cpp</in>
+          <in>IQRFJsonRequest.h</in>
+          <in>IQRFJsonResponse.cpp</in>
+          <in>IQRFJsonResponse.h</in>
+        </df>
+        <df name="jablotron">
+          <in>JablotronController.cpp</in>
+          <in>JablotronController.h</in>
+          <in>JablotronDeviceManager.cpp</in>
+          <in>JablotronDeviceManager.h</in>
+          <in>JablotronGadget.cpp</in>
+          <in>JablotronGadget.h</in>
+          <in>JablotronReport.cpp</in>
+          <in>JablotronReport.h</in>
+        </df>
+        <df name="lora">
+          <in>LoRaDevice.c</in>
+          <in>LoRaDevice.cpp</in>
+          <in>LoRaDevice.h</in>
+          <in>LoRaDeviceManager.cpp</in>
+          <in>LoRaLogger.c</in>
+          <in>LoRaPacketTools.c</in>
+          <in>LoRaPacketTools.h</in>
+          <in>parson.c</in>
+        </df>
+        <df name="net">
+          <in>AbstractHTTPScanner.cpp</in>
+          <in>AbstractHTTPScanner.h</in>
+          <in>GatewayMosquittoClient.cpp</in>
+          <in>GatewayMosquittoClient.h</in>
+          <in>MosquittoClient.cpp</in>
+          <in>MosquittoClient.h</in>
+          <in>MqttMessage.cpp</in>
+          <in>MqttMessage.h</in>
+          <in>SOAPMessage.cpp</in>
+          <in>SOAPMessage.h</in>
+          <in>UPnP.cpp</in>
+          <in>UPnP.h</in>
+          <in>VPTHTTPScanner.cpp</in>
+          <in>VPTHTTPScanner.h</in>
+        </df>
+        <df name="philips">
+          <in>PhilipsHueBridge.cpp</in>
+          <in>PhilipsHueBridge.h</in>
+          <in>PhilipsHueBridgeInfo.cpp</in>
+          <in>PhilipsHueBridgeInfo.h</in>
+          <in>PhilipsHueBulb.cpp</in>
+          <in>PhilipsHueBulb.h</in>
+          <in>PhilipsHueBulbInfo.cpp</in>
+          <in>PhilipsHueBulbInfo.h</in>
+          <in>PhilipsHueDeviceManager.cpp</in>
+          <in>PhilipsHueDeviceManager.h</in>
+          <in>PhilipsHueDimmableBulb.cpp</in>
+          <in>PhilipsHueDimmableBulb.h</in>
+          <in>PhilipsHueListener.cpp</in>
+          <in>PhilipsHueListener.h</in>
+        </df>
+        <df name="psdev">
+          <in>PressureSensorManager.cpp</in>
+          <in>PressureSensorManager.h</in>
+        </df>
+        <df name="server">
+          <in>GWContextPoll.cpp</in>
+          <in>GWContextPoll.h</in>
+          <in>GWMessageContext.cpp</in>
+          <in>GWMessageContext.h</in>
+          <in>GWSOutputQueue.cpp</in>
+          <in>GWSOutputQueue.h</in>
+          <in>GWServerConnector.cpp</in>
+          <in>GWServerConnector.h</in>
+          <in>ServerAnswer.cpp</in>
+          <in>ServerAnswer.h</in>
+        </df>
+        <df name="util">
+          <in>CSVSensorDataFormatter.cpp</in>
+          <in>CSVSensorDataFormatter.h</in>
+          <in>ChecksumSensorDataFormatter.cpp</in>
+          <in>ChecksumSensorDataFormatter.h</in>
+          <in>ChecksumSensorDataParser.cpp</in>
+          <in>ChecksumSensorDataParser.h</in>
+          <in>ColorBrightness.cpp</in>
+          <in>ColorBrightness.h</in>
+          <in>DataIterator.h</in>
+          <in>DataReader.cpp</in>
+          <in>DataReader.h</in>
+          <in>DataWriter.cpp</in>
+          <in>DataWriter.h</in>
+          <in>JSONSensorDataFormatter.cpp</in>
+          <in>JSONSensorDataFormatter.h</in>
+          <in>JSONSensorDataParser.cpp</in>
+          <in>JSONSensorDataParser.h</in>
+          <in>Journal.cpp</in>
+          <in>Journal.h</in>
+          <in>NullSensorDataFormatter.cpp</in>
+          <in>NullSensorDataFormatter.h</in>
+          <in>SensorDataFormatter.cpp</in>
+          <in>SensorDataFormatter.h</in>
+          <in>SensorDataParser.cpp</in>
+          <in>SensorDataParser.h</in>
+          <in>TypeMappingParser.h</in>
+          <in>XmlTypeMappingParser.h</in>
+          <in>XmlTypeMappingParserHelper.cpp</in>
+          <in>XmlTypeMappingParserHelper.h</in>
+        </df>
+        <df name="vdev">
+          <in>VirtualDevice.cpp</in>
+          <in>VirtualDevice.h</in>
+          <in>VirtualDeviceManager.cpp</in>
+          <in>VirtualDeviceManager.h</in>
+          <in>VirtualModule.cpp</in>
+          <in>VirtualModule.h</in>
+        </df>
+        <df name="vpt">
+          <in>VPTBoilerModuleType.cpp</in>
+          <in>VPTBoilerModuleType.h</in>
+          <in>VPTDevice.cpp</in>
+          <in>VPTDevice.h</in>
+          <in>VPTDeviceManager.cpp</in>
+          <in>VPTDeviceManager.h</in>
+          <in>VPTValuesParser.cpp</in>
+          <in>VPTValuesParser.h</in>
+          <in>VPTZoneModuleType.cpp</in>
+          <in>VPTZoneModuleType.h</in>
+        </df>
+        <df name="zwave">
+          <in>AbstractZWaveNetwork.cpp</in>
+          <in>AbstractZWaveNetwork.h</in>
+          <in>AeotecZWaveMapperRegistry.cpp</in>
+          <in>AeotecZWaveMapperRegistry.h</in>
+          <in>ClimaxZWaveMapperRegistry.cpp</in>
+          <in>ClimaxZWaveMapperRegistry.h</in>
+          <in>CompositeZWaveMapperRegistry.cpp</in>
+          <in>CompositeZWaveMapperRegistry.h</in>
+          <in>FibaroZWaveMapperRegistry.cpp</in>
+          <in>FibaroZWaveMapperRegistry.h</in>
+          <in>GenericZWaveMapperRegistry.cpp</in>
+          <in>GenericZWaveMapperRegistry.h</in>
+          <in>OZWCommand.cpp</in>
+          <in>OZWCommand.h</in>
+          <in>OZWNetwork.cpp</in>
+          <in>OZWNetwork.h</in>
+          <in>OZWNotificationEvent.cpp</in>
+          <in>OZWNotificationEvent.h</in>
+          <in>OZWPocoLoggerAdapter.cpp</in>
+          <in>OZWPocoLoggerAdapter.h</in>
+          <in>ST02L1ZWaveMapperRegistry.cpp</in>
+          <in>ST02L1ZWaveMapperRegistry.h</in>
+          <in>SpecificZWaveMapperRegistry.cpp</in>
+          <in>SpecificZWaveMapperRegistry.h</in>
+          <in>ZWaveDeviceManager.cpp</in>
+          <in>ZWaveDeviceManager.h</in>
+          <in>ZWaveDriverEvent.cpp</in>
+          <in>ZWaveDriverEvent.h</in>
+          <in>ZWaveListener.cpp</in>
+          <in>ZWaveListener.h</in>
+          <in>ZWaveMapperRegistry.cpp</in>
+          <in>ZWaveMapperRegistry.h</in>
+          <in>ZWaveNetwork.cpp</in>
+          <in>ZWaveNetwork.h</in>
+          <in>ZWaveNode.cpp</in>
+          <in>ZWaveNode.h</in>
+          <in>ZWaveNodeEvent.cpp</in>
+          <in>ZWaveNodeEvent.h</in>
+          <in>ZWaveNodeInfo.cpp</in>
+          <in>ZWaveNodeInfo.h</in>
+          <in>ZWaveSerialProber.cpp</in>
+          <in>ZWaveSerialProber.h</in>
+          <in>ZWaveTypeMappingParser.cpp</in>
+          <in>ZWaveTypeMappingParser.h</in>
+        </df>
+        <in>main.cpp</in>
+      </df>
+      <df name="systemd">
+      </df>
+      <df name="t">
+      </df>
+      <df name="test">
+        <df name="bluetooth">
+          <in>BLESmartDeviceTest.cpp</in>
+          <in>GlibPtrTest.cpp</in>
+          <in>HciInterfaceTest.cpp</in>
+        </df>
+        <df name="core">
+          <in>AnswerQueueTest.cpp</in>
+          <in>CommandDispatcherTest.cpp</in>
+          <in>DeviceStatusFetcherTest.cpp</in>
+          <in>DongleDeviceManagerTest.cpp</in>
+          <in>ExporterQueueTest.cpp</in>
+          <in>FilesystemDeviceCacheTest.cpp</in>
+          <in>MemoryDeviceCacheTest.cpp</in>
+          <in>QueuingDistributorTest.cpp</in>
+          <in>QueuingExporterTest.cpp</in>
+        </df>
+        <df name="credentials">
+          <in>CredentialsStorageTest.cpp</in>
+          <in>CredentialsTest.cpp</in>
+        </df>
+        <df name="exporters">
+          <in>JournalQueuingStrategyTest.cpp</in>
+          <in>RecoverableJournalQueuingStrategyTest.cpp</in>
+        </df>
+        <df name="fitp">
+          <in>FitpDeviceTest.cpp</in>
+        </df>
+        <df name="iqrf">
+          <in>DPARequestTest.cpp</in>
+          <in>DPAResponseTest.cpp</in>
+          <in>IQRFJsonMessageTest.cpp</in>
+        </df>
+        <df name="jablotron">
+          <in>JablotronGadgetTest.cpp</in>
+          <in>JablotronReportTest.cpp</in>
+        </df>
+        <df name="util">
+          <in>CSVSensorDataFormatterTest.cpp</in>
+          <in>ColorBrightnessTest.cpp</in>
+          <in>DataReaderTest.cpp</in>
+          <in>DataWriterTest.cpp</in>
+          <in>JSONSensorDataFormatterTest.cpp</in>
+          <in>JSONSensorDataParserTest.cpp</in>
+          <in>JournalTest.cpp</in>
+          <in>XmlTypeMappingParserTest.cpp</in>
+        </df>
+        <df name="vpt">
+          <in>VPTDeviceTest.cpp</in>
+        </df>
+        <df name="zwave">
+          <in>AbstractZWaveNetworkTest.cpp</in>
+          <in>GenericZWaveMapperRegistryTest.cpp</in>
+          <in>ZWaveNodeTest.cpp</in>
+          <in>ZWaveTypeMappingParserTest.cpp</in>
+        </df>
+      </df>
+      <df name="tools">
+      </df>
+      <df name="udev">
+        <df name="rules.d">
+        </df>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,1682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="src">
+        <df name="belkin">
+          <in>BelkinWemoBulb.cpp</in>
+          <in>BelkinWemoBulb.h</in>
+          <in>BelkinWemoDevice.cpp</in>
+          <in>BelkinWemoDevice.h</in>
+          <in>BelkinWemoDeviceManager.cpp</in>
+          <in>BelkinWemoDeviceManager.h</in>
+          <in>BelkinWemoDimmer.cpp</in>
+          <in>BelkinWemoDimmer.h</in>
+          <in>BelkinWemoLink.cpp</in>
+          <in>BelkinWemoLink.h</in>
+          <in>BelkinWemoStandaloneDevice.cpp</in>
+          <in>BelkinWemoStandaloneDevice.h</in>
+          <in>BelkinWemoSwitch.cpp</in>
+          <in>BelkinWemoSwitch.h</in>
+        </df>
+        <df name="bluetooth">
+          <in>BLESmartDevice.cpp</in>
+          <in>BLESmartDevice.h</in>
+          <in>BLESmartDeviceManager.cpp</in>
+          <in>BLESmartDeviceManager.h</in>
+          <in>BeeWiDevice.cpp</in>
+          <in>BeeWiDevice.h</in>
+          <in>BeeWiSmartClim.cpp</in>
+          <in>BeeWiSmartClim.h</in>
+          <in>BeeWiSmartDoor.cpp</in>
+          <in>BeeWiSmartDoor.h</in>
+          <in>BeeWiSmartLite.cpp</in>
+          <in>BeeWiSmartLite.h</in>
+          <in>BeeWiSmartMotion.cpp</in>
+          <in>BeeWiSmartMotion.h</in>
+          <in>BeeWiSmartWatt.cpp</in>
+          <in>BeeWiSmartWatt.h</in>
+          <in>BluetoothAvailabilityManager.cpp</in>
+          <in>BluetoothAvailabilityManager.h</in>
+          <in>BluetoothDevice.cpp</in>
+          <in>BluetoothDevice.h</in>
+          <in>BluezHciInterface.cpp</in>
+          <in>BluezHciInterface.h</in>
+          <in>DBusHciConnection.cpp</in>
+          <in>DBusHciConnection.h</in>
+          <in>DBusHciInterface.cpp</in>
+          <in>DBusHciInterface.h</in>
+          <in>GlibPtr.h</in>
+          <in>HciConnection.cpp</in>
+          <in>HciConnection.h</in>
+          <in>HciInfo.cpp</in>
+          <in>HciInfo.h</in>
+          <in>HciInfoReporter.cpp</in>
+          <in>HciInfoReporter.h</in>
+          <in>HciInterface.cpp</in>
+          <in>HciInterface.h</in>
+          <in>HciListener.cpp</in>
+          <in>HciListener.h</in>
+          <in>HciUtil.cpp</in>
+          <in>HciUtil.h</in>
+          <in>RevogiDevice.cpp</in>
+          <in>RevogiDevice.h</in>
+          <in>RevogiRGBLight.cpp</in>
+          <in>RevogiRGBLight.h</in>
+          <in>RevogiSmartCandle.cpp</in>
+          <in>RevogiSmartCandle.h</in>
+          <in>RevogiSmartLite.cpp</in>
+          <in>RevogiSmartLite.h</in>
+          <in>RevogiSmartPlug.cpp</in>
+          <in>RevogiSmartPlug.h</in>
+          <in>TabuLumenSmartLite.cpp</in>
+          <in>TabuLumenSmartLite.h</in>
+        </df>
+        <df name="commands">
+          <in>DeviceAcceptCommand.cpp</in>
+          <in>DeviceAcceptCommand.h</in>
+          <in>DeviceSetValueCommand.cpp</in>
+          <in>DeviceSetValueCommand.h</in>
+          <in>DeviceUnpairCommand.cpp</in>
+          <in>DeviceUnpairCommand.h</in>
+          <in>DeviceUnpairResult.cpp</in>
+          <in>DeviceUnpairResult.h</in>
+          <in>GatewayListenCommand.cpp</in>
+          <in>GatewayListenCommand.h</in>
+          <in>NewDeviceCommand.cpp</in>
+          <in>NewDeviceCommand.h</in>
+          <in>ServerDeviceListCommand.cpp</in>
+          <in>ServerDeviceListCommand.h</in>
+          <in>ServerDeviceListResult.cpp</in>
+          <in>ServerDeviceListResult.h</in>
+          <in>ServerLastValueCommand.cpp</in>
+          <in>ServerLastValueCommand.h</in>
+          <in>ServerLastValueResult.cpp</in>
+          <in>ServerLastValueResult.h</in>
+        </df>
+        <df name="core">
+          <in>AbstractCollector.cpp</in>
+          <in>AbstractCollector.h</in>
+          <in>AbstractDistributor.cpp</in>
+          <in>AbstractDistributor.h</in>
+          <in>AbstractSeeker.cpp</in>
+          <in>AbstractSeeker.h</in>
+          <in>Answer.cpp</in>
+          <in>Answer.h</in>
+          <in>AnswerQueue.cpp</in>
+          <in>AnswerQueue.h</in>
+          <in>AsyncCommandDispatcher.cpp</in>
+          <in>AsyncCommandDispatcher.h</in>
+          <in>BasicDistributor.cpp</in>
+          <in>BasicDistributor.h</in>
+          <in>Command.cpp</in>
+          <in>Command.h</in>
+          <in>CommandDispatcher.cpp</in>
+          <in>CommandDispatcher.h</in>
+          <in>CommandDispatcherListener.cpp</in>
+          <in>CommandDispatcherListener.h</in>
+          <in>CommandHandler.cpp</in>
+          <in>CommandHandler.h</in>
+          <in>CommandSender.cpp</in>
+          <in>CommandSender.h</in>
+          <in>DeviceCache.cpp</in>
+          <in>DeviceCache.h</in>
+          <in>DeviceManager.cpp</in>
+          <in>DeviceManager.h</in>
+          <in>DeviceStatusFetcher.cpp</in>
+          <in>DeviceStatusFetcher.h</in>
+          <in>DeviceStatusHandler.cpp</in>
+          <in>DeviceStatusHandler.h</in>
+          <in>Distributor.cpp</in>
+          <in>Distributor.h</in>
+          <in>DistributorListener.cpp</in>
+          <in>DistributorListener.h</in>
+          <in>DongleDeviceManager.cpp</in>
+          <in>DongleDeviceManager.h</in>
+          <in>Exporter.cpp</in>
+          <in>Exporter.h</in>
+          <in>ExporterQueue.cpp</in>
+          <in>ExporterQueue.h</in>
+          <in>FilesystemDeviceCache.cpp</in>
+          <in>FilesystemDeviceCache.h</in>
+          <in>GatewayInfo.cpp</in>
+          <in>GatewayInfo.h</in>
+          <in>LoggingCollector.cpp</in>
+          <in>LoggingCollector.h</in>
+          <in>MemoryDeviceCache.cpp</in>
+          <in>MemoryDeviceCache.h</in>
+          <in>PrefixCommand.cpp</in>
+          <in>PrefixCommand.h</in>
+          <in>QueuingDistributor.cpp</in>
+          <in>QueuingDistributor.h</in>
+          <in>QueuingExporter.cpp</in>
+          <in>QueuingExporter.h</in>
+          <in>Result.cpp</in>
+          <in>Result.h</in>
+          <in>TestingCenter.cpp</in>
+          <in>TestingCenter.h</in>
+          <in>Version.h</in>
+        </df>
+        <df name="credentials">
+          <in>Credentials.cpp</in>
+          <in>Credentials.h</in>
+          <in>CredentialsStorage.cpp</in>
+          <in>CredentialsStorage.h</in>
+          <in>CredentialsTool.cpp</in>
+          <in>CredentialsTool.h</in>
+          <in>FileCredentialsStorage.cpp</in>
+          <in>FileCredentialsStorage.h</in>
+          <in>PasswordCredentials.cpp</in>
+          <in>PasswordCredentials.h</in>
+          <in>PinCredentials.cpp</in>
+          <in>PinCredentials.h</in>
+        </df>
+        <df name="exporters">
+          <in>InMemoryQueuingStrategy.cpp</in>
+          <in>InMemoryQueuingStrategy.h</in>
+          <in>JournalQueuingStrategy.cpp</in>
+          <in>JournalQueuingStrategy.h</in>
+          <in>MosquittoExporter.cpp</in>
+          <in>MosquittoExporter.h</in>
+          <in>NamedPipeExporter.cpp</in>
+          <in>NamedPipeExporter.h</in>
+          <in>QueuingStrategy.cpp</in>
+          <in>QueuingStrategy.h</in>
+          <in>RecoverableJournalQueuingStrategy.cpp</in>
+          <in>RecoverableJournalQueuingStrategy.h</in>
+        </df>
+        <df name="fitp">
+          <in>FitpDevice.cpp</in>
+          <in>FitpDevice.h</in>
+          <in>FitpDeviceManager.cpp</in>
+          <in>FitpDeviceManager.h</in>
+        </df>
+        <df name="hotplug">
+          <in>AbstractHotplugMonitor.cpp</in>
+          <in>AbstractHotplugMonitor.h</in>
+          <in>HotplugEvent.cpp</in>
+          <in>HotplugEvent.h</in>
+          <in>HotplugListener.cpp</in>
+          <in>HotplugListener.h</in>
+          <in>PipeHotplugMonitor.cpp</in>
+          <in>PipeHotplugMonitor.h</in>
+          <in>UDevMonitor.cpp</in>
+          <in>UDevMonitor.h</in>
+        </df>
+        <df name="iqrf">
+          <df name="request">
+            <in>DPACoordBondNodeRequest.cpp</in>
+            <in>DPACoordBondNodeRequest.h</in>
+            <in>DPACoordBondedNodesRequest.cpp</in>
+            <in>DPACoordBondedNodesRequest.h</in>
+            <in>DPACoordClearAllBondsRequest.cpp</in>
+            <in>DPACoordClearAllBondsRequest.h</in>
+            <in>DPACoordDiscoveryRequest.cpp</in>
+            <in>DPACoordDiscoveryRequest.h</in>
+            <in>DPACoordRemoveNodeRequest.cpp</in>
+            <in>DPACoordRemoveNodeRequest.h</in>
+            <in>DPANodeRemoveBondRequest.cpp</in>
+            <in>DPANodeRemoveBondRequest.h</in>
+            <in>DPAOSBatchRequest.cpp</in>
+            <in>DPAOSBatchRequest.h</in>
+            <in>DPAOSPeripheralInfoRequest.cpp</in>
+            <in>DPAOSPeripheralInfoRequest.h</in>
+            <in>DPAOSRestartRequest.cpp</in>
+            <in>DPAOSRestartRequest.h</in>
+          </df>
+          <df name="response">
+            <in>DPACoordBondNodeResponse.cpp</in>
+            <in>DPACoordBondNodeResponse.h</in>
+            <in>DPACoordBondedNodesResponse.cpp</in>
+            <in>DPACoordBondedNodesResponse.h</in>
+            <in>DPACoordRemoveNodeResponse.cpp</in>
+            <in>DPACoordRemoveNodeResponse.h</in>
+            <in>DPAOSPeripheralInfoResponse.cpp</in>
+            <in>DPAOSPeripheralInfoResponse.h</in>
+          </df>
+          <in>DPAMessage.cpp</in>
+          <in>DPAMessage.h</in>
+          <in>DPARequest.cpp</in>
+          <in>DPARequest.h</in>
+          <in>DPAResponse.cpp</in>
+          <in>DPAResponse.h</in>
+          <in>IQRFJsonMessage.cpp</in>
+          <in>IQRFJsonMessage.h</in>
+          <in>IQRFJsonRequest.cpp</in>
+          <in>IQRFJsonRequest.h</in>
+          <in>IQRFJsonResponse.cpp</in>
+          <in>IQRFJsonResponse.h</in>
+        </df>
+        <df name="jablotron">
+          <in>JablotronController.cpp</in>
+          <in>JablotronController.h</in>
+          <in>JablotronDeviceManager.cpp</in>
+          <in>JablotronDeviceManager.h</in>
+          <in>JablotronGadget.cpp</in>
+          <in>JablotronGadget.h</in>
+          <in>JablotronReport.cpp</in>
+          <in>JablotronReport.h</in>
+        </df>
+        <df name="lora">
+          <in>LoRaDevice.cpp</in>
+          <in>LoRaDeviceManager.cpp</in>
+        </df>
+        <df name="net">
+          <in>AbstractHTTPScanner.cpp</in>
+          <in>AbstractHTTPScanner.h</in>
+          <in>GatewayMosquittoClient.cpp</in>
+          <in>GatewayMosquittoClient.h</in>
+          <in>MosquittoClient.cpp</in>
+          <in>MosquittoClient.h</in>
+          <in>MqttMessage.cpp</in>
+          <in>MqttMessage.h</in>
+          <in>SOAPMessage.cpp</in>
+          <in>SOAPMessage.h</in>
+          <in>UPnP.cpp</in>
+          <in>UPnP.h</in>
+          <in>VPTHTTPScanner.cpp</in>
+          <in>VPTHTTPScanner.h</in>
+        </df>
+        <df name="philips">
+          <in>PhilipsHueBridge.cpp</in>
+          <in>PhilipsHueBridge.h</in>
+          <in>PhilipsHueBridgeInfo.cpp</in>
+          <in>PhilipsHueBridgeInfo.h</in>
+          <in>PhilipsHueBulb.cpp</in>
+          <in>PhilipsHueBulb.h</in>
+          <in>PhilipsHueBulbInfo.cpp</in>
+          <in>PhilipsHueBulbInfo.h</in>
+          <in>PhilipsHueDeviceManager.cpp</in>
+          <in>PhilipsHueDeviceManager.h</in>
+          <in>PhilipsHueDimmableBulb.cpp</in>
+          <in>PhilipsHueDimmableBulb.h</in>
+          <in>PhilipsHueListener.cpp</in>
+          <in>PhilipsHueListener.h</in>
+        </df>
+        <df name="psdev">
+          <in>PressureSensorManager.cpp</in>
+          <in>PressureSensorManager.h</in>
+        </df>
+        <df name="server">
+          <in>GWContextPoll.cpp</in>
+          <in>GWContextPoll.h</in>
+          <in>GWMessageContext.cpp</in>
+          <in>GWMessageContext.h</in>
+          <in>GWSOutputQueue.cpp</in>
+          <in>GWSOutputQueue.h</in>
+          <in>GWServerConnector.cpp</in>
+          <in>GWServerConnector.h</in>
+          <in>ServerAnswer.cpp</in>
+          <in>ServerAnswer.h</in>
+        </df>
+        <df name="util">
+          <in>CSVSensorDataFormatter.cpp</in>
+          <in>CSVSensorDataFormatter.h</in>
+          <in>ChecksumSensorDataFormatter.cpp</in>
+          <in>ChecksumSensorDataFormatter.h</in>
+          <in>ChecksumSensorDataParser.cpp</in>
+          <in>ChecksumSensorDataParser.h</in>
+          <in>ColorBrightness.cpp</in>
+          <in>ColorBrightness.h</in>
+          <in>DataIterator.h</in>
+          <in>DataReader.cpp</in>
+          <in>DataReader.h</in>
+          <in>DataWriter.cpp</in>
+          <in>DataWriter.h</in>
+          <in>JSONSensorDataFormatter.cpp</in>
+          <in>JSONSensorDataFormatter.h</in>
+          <in>JSONSensorDataParser.cpp</in>
+          <in>JSONSensorDataParser.h</in>
+          <in>Journal.cpp</in>
+          <in>Journal.h</in>
+          <in>NullSensorDataFormatter.cpp</in>
+          <in>NullSensorDataFormatter.h</in>
+          <in>SensorDataFormatter.cpp</in>
+          <in>SensorDataFormatter.h</in>
+          <in>SensorDataParser.cpp</in>
+          <in>SensorDataParser.h</in>
+          <in>TypeMappingParser.h</in>
+          <in>XmlTypeMappingParser.h</in>
+          <in>XmlTypeMappingParserHelper.cpp</in>
+          <in>XmlTypeMappingParserHelper.h</in>
+        </df>
+        <df name="vdev">
+          <in>VirtualDevice.cpp</in>
+          <in>VirtualDevice.h</in>
+          <in>VirtualDeviceManager.cpp</in>
+          <in>VirtualDeviceManager.h</in>
+          <in>VirtualModule.cpp</in>
+          <in>VirtualModule.h</in>
+        </df>
+        <df name="vpt">
+          <in>VPTBoilerModuleType.cpp</in>
+          <in>VPTBoilerModuleType.h</in>
+          <in>VPTDevice.cpp</in>
+          <in>VPTDevice.h</in>
+          <in>VPTDeviceManager.cpp</in>
+          <in>VPTDeviceManager.h</in>
+          <in>VPTValuesParser.cpp</in>
+          <in>VPTValuesParser.h</in>
+          <in>VPTZoneModuleType.cpp</in>
+          <in>VPTZoneModuleType.h</in>
+        </df>
+        <df name="zwave">
+          <in>AbstractZWaveNetwork.cpp</in>
+          <in>AbstractZWaveNetwork.h</in>
+          <in>AeotecZWaveMapperRegistry.cpp</in>
+          <in>AeotecZWaveMapperRegistry.h</in>
+          <in>ClimaxZWaveMapperRegistry.cpp</in>
+          <in>ClimaxZWaveMapperRegistry.h</in>
+          <in>CompositeZWaveMapperRegistry.cpp</in>
+          <in>CompositeZWaveMapperRegistry.h</in>
+          <in>FibaroZWaveMapperRegistry.cpp</in>
+          <in>FibaroZWaveMapperRegistry.h</in>
+          <in>GenericZWaveMapperRegistry.cpp</in>
+          <in>GenericZWaveMapperRegistry.h</in>
+          <in>OZWCommand.cpp</in>
+          <in>OZWCommand.h</in>
+          <in>OZWNetwork.cpp</in>
+          <in>OZWNetwork.h</in>
+          <in>OZWNotificationEvent.cpp</in>
+          <in>OZWNotificationEvent.h</in>
+          <in>OZWPocoLoggerAdapter.cpp</in>
+          <in>OZWPocoLoggerAdapter.h</in>
+          <in>ST02L1ZWaveMapperRegistry.cpp</in>
+          <in>ST02L1ZWaveMapperRegistry.h</in>
+          <in>SpecificZWaveMapperRegistry.cpp</in>
+          <in>SpecificZWaveMapperRegistry.h</in>
+          <in>ZWaveDeviceManager.cpp</in>
+          <in>ZWaveDeviceManager.h</in>
+          <in>ZWaveDriverEvent.cpp</in>
+          <in>ZWaveDriverEvent.h</in>
+          <in>ZWaveListener.cpp</in>
+          <in>ZWaveListener.h</in>
+          <in>ZWaveMapperRegistry.cpp</in>
+          <in>ZWaveMapperRegistry.h</in>
+          <in>ZWaveNetwork.cpp</in>
+          <in>ZWaveNetwork.h</in>
+          <in>ZWaveNode.cpp</in>
+          <in>ZWaveNode.h</in>
+          <in>ZWaveNodeEvent.cpp</in>
+          <in>ZWaveNodeEvent.h</in>
+          <in>ZWaveNodeInfo.cpp</in>
+          <in>ZWaveNodeInfo.h</in>
+          <in>ZWaveSerialProber.cpp</in>
+          <in>ZWaveSerialProber.h</in>
+          <in>ZWaveTypeMappingParser.cpp</in>
+          <in>ZWaveTypeMappingParser.h</in>
+        </df>
+        <in>main.cpp</in>
+      </df>
+      <df name="test">
+        <df name="bluetooth">
+          <in>BLESmartDeviceTest.cpp</in>
+          <in>GlibPtrTest.cpp</in>
+          <in>HciInterfaceTest.cpp</in>
+        </df>
+        <df name="core">
+          <in>AnswerQueueTest.cpp</in>
+          <in>CommandDispatcherTest.cpp</in>
+          <in>DeviceStatusFetcherTest.cpp</in>
+          <in>DongleDeviceManagerTest.cpp</in>
+          <in>ExporterQueueTest.cpp</in>
+          <in>FilesystemDeviceCacheTest.cpp</in>
+          <in>MemoryDeviceCacheTest.cpp</in>
+          <in>QueuingDistributorTest.cpp</in>
+          <in>QueuingExporterTest.cpp</in>
+        </df>
+        <df name="credentials">
+          <in>CredentialsStorageTest.cpp</in>
+          <in>CredentialsTest.cpp</in>
+        </df>
+        <df name="exporters">
+          <in>JournalQueuingStrategyTest.cpp</in>
+          <in>RecoverableJournalQueuingStrategyTest.cpp</in>
+        </df>
+        <df name="fitp">
+          <in>FitpDeviceTest.cpp</in>
+        </df>
+        <df name="iqrf">
+          <in>DPARequestTest.cpp</in>
+          <in>DPAResponseTest.cpp</in>
+          <in>IQRFJsonMessageTest.cpp</in>
+        </df>
+        <df name="jablotron">
+          <in>JablotronGadgetTest.cpp</in>
+          <in>JablotronReportTest.cpp</in>
+        </df>
+        <df name="util">
+          <in>CSVSensorDataFormatterTest.cpp</in>
+          <in>ColorBrightnessTest.cpp</in>
+          <in>DataReaderTest.cpp</in>
+          <in>DataWriterTest.cpp</in>
+          <in>JSONSensorDataFormatterTest.cpp</in>
+          <in>JSONSensorDataParserTest.cpp</in>
+          <in>JournalTest.cpp</in>
+          <in>XmlTypeMappingParserTest.cpp</in>
+        </df>
+        <df name="vpt">
+          <in>VPTDeviceTest.cpp</in>
+        </df>
+        <df name="zwave">
+          <in>AbstractZWaveNetworkTest.cpp</in>
+          <in>GenericZWaveMapperRegistryTest.cpp</in>
+          <in>ZWaveNodeTest.cpp</in>
+          <in>ZWaveTypeMappingParserTest.cpp</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>echo build</buildCommand>
+          <cleanCommand>echo clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="src/belkin/BelkinWemoBulb.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoBulb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoDevice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoDeviceManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoDeviceManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoDimmer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoDimmer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoLink.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoLink.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoStandaloneDevice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoStandaloneDevice.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoSwitch.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/belkin/BelkinWemoSwitch.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BLESmartDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BLESmartDevice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BLESmartDeviceManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/bluetooth/BLESmartDeviceManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiDevice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartClim.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartClim.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartDoor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartDoor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartLite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartLite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartMotion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartMotion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartWatt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BeeWiSmartWatt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BluetoothAvailabilityManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/bluetooth/BluetoothAvailabilityManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/bluetooth/BluetoothDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BluetoothDevice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/BluezHciInterface.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/bluetooth/BluezHciInterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/DBusHciConnection.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/bluetooth/DBusHciConnection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/DBusHciInterface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/DBusHciInterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/GlibPtr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciConnection.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciConnection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciInfoReporter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciInfoReporter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciInterface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciInterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciListener.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciListener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciUtil.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/HciUtil.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiDevice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiRGBLight.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiRGBLight.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiSmartCandle.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiSmartCandle.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiSmartLite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiSmartLite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiSmartPlug.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bluetooth/RevogiSmartPlug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/bluetooth/TabuLumenSmartLite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/bluetooth/TabuLumenSmartLite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/commands/DeviceAcceptCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/commands/DeviceAcceptCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/commands/DeviceSetValueCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/commands/DeviceSetValueCommand.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/commands/DeviceUnpairCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/commands/DeviceUnpairCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/commands/DeviceUnpairResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/commands/DeviceUnpairResult.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/commands/GatewayListenCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/commands/GatewayListenCommand.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/commands/NewDeviceCommand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/commands/NewDeviceCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/commands/ServerDeviceListCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/commands/ServerDeviceListCommand.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/commands/ServerDeviceListResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/commands/ServerDeviceListResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/commands/ServerLastValueCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/commands/ServerLastValueCommand.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/commands/ServerLastValueResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/commands/ServerLastValueResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/core/AbstractCollector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/AbstractCollector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/AbstractDistributor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/AbstractDistributor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/AbstractSeeker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/AbstractSeeker.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/Answer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/Answer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/AnswerQueue.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/AnswerQueue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/AsyncCommandDispatcher.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/core/AsyncCommandDispatcher.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/BasicDistributor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/BasicDistributor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/Command.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/Command.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/CommandDispatcher.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/CommandDispatcher.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/CommandDispatcherListener.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/core/CommandDispatcherListener.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/core/CommandHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/CommandHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/CommandSender.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/CommandSender.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/DeviceCache.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/DeviceCache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/DeviceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/DeviceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/DeviceStatusFetcher.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/DeviceStatusFetcher.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/DeviceStatusHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/DeviceStatusHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/Distributor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/Distributor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/DistributorListener.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/DistributorListener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/DongleDeviceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/DongleDeviceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/Exporter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/Exporter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/ExporterQueue.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/ExporterQueue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/FilesystemDeviceCache.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/FilesystemDeviceCache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/GatewayInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/GatewayInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/LoggingCollector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/LoggingCollector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/MemoryDeviceCache.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/MemoryDeviceCache.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/PrefixCommand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/PrefixCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/QueuingDistributor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/QueuingDistributor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/QueuingExporter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/QueuingExporter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/Result.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/Result.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/TestingCenter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core/TestingCenter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/core/Version.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/credentials/Credentials.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/credentials/Credentials.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/credentials/CredentialsStorage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/credentials/CredentialsStorage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/credentials/CredentialsTool.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/credentials/CredentialsTool.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/credentials/FileCredentialsStorage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/credentials/FileCredentialsStorage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/credentials/PasswordCredentials.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/credentials/PasswordCredentials.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/credentials/PinCredentials.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/credentials/PinCredentials.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/exporters/InMemoryQueuingStrategy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/exporters/InMemoryQueuingStrategy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/exporters/JournalQueuingStrategy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/exporters/JournalQueuingStrategy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/exporters/MosquittoExporter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/exporters/MosquittoExporter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/exporters/NamedPipeExporter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/exporters/NamedPipeExporter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/exporters/QueuingStrategy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/exporters/QueuingStrategy.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/exporters/RecoverableJournalQueuingStrategy.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/exporters/RecoverableJournalQueuingStrategy.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/fitp/FitpDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/fitp/FitpDevice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/fitp/FitpDeviceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/fitp/FitpDeviceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/hotplug/AbstractHotplugMonitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/hotplug/AbstractHotplugMonitor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/hotplug/HotplugEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/hotplug/HotplugEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/hotplug/HotplugListener.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/hotplug/HotplugListener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/hotplug/PipeHotplugMonitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/hotplug/PipeHotplugMonitor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/hotplug/UDevMonitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/hotplug/UDevMonitor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/iqrf/DPAMessage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/iqrf/DPAMessage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/iqrf/DPARequest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/iqrf/DPARequest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/iqrf/DPAResponse.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/iqrf/DPAResponse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/iqrf/IQRFJsonMessage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/iqrf/IQRFJsonMessage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/iqrf/IQRFJsonRequest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/iqrf/IQRFJsonRequest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/iqrf/IQRFJsonResponse.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/iqrf/IQRFJsonResponse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordBondNodeRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordBondNodeRequest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordBondedNodesRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordBondedNodesRequest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordClearAllBondsRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordClearAllBondsRequest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordDiscoveryRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordDiscoveryRequest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordRemoveNodeRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPACoordRemoveNodeRequest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPANodeRemoveBondRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPANodeRemoveBondRequest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPAOSBatchRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPAOSBatchRequest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPAOSPeripheralInfoRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPAOSPeripheralInfoRequest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPAOSRestartRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/request/DPAOSRestartRequest.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/response/DPACoordBondNodeResponse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/response/DPACoordBondNodeResponse.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/response/DPACoordBondedNodesResponse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/response/DPACoordBondedNodesResponse.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/response/DPACoordRemoveNodeResponse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/response/DPACoordRemoveNodeResponse.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/response/DPAOSPeripheralInfoResponse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/iqrf/response/DPAOSPeripheralInfoResponse.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/jablotron/JablotronController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/jablotron/JablotronController.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/jablotron/JablotronDeviceManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/jablotron/JablotronDeviceManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/jablotron/JablotronGadget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/jablotron/JablotronGadget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/jablotron/JablotronReport.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/jablotron/JablotronReport.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/lora/LoRaDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/lora/LoRaDeviceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/net/AbstractHTTPScanner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/net/AbstractHTTPScanner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/net/GatewayMosquittoClient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/net/GatewayMosquittoClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/net/MosquittoClient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/net/MosquittoClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/net/MqttMessage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/net/MqttMessage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/net/SOAPMessage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/net/SOAPMessage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/net/UPnP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/net/UPnP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/net/VPTHTTPScanner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/net/VPTHTTPScanner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueBridge.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueBridge.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueBridgeInfo.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueBridgeInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueBulb.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueBulb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueBulbInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueBulbInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueDeviceManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueDeviceManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueDimmableBulb.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueDimmableBulb.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueListener.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/philips/PhilipsHueListener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/psdev/PressureSensorManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/psdev/PressureSensorManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/server/GWContextPoll.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/GWContextPoll.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/server/GWMessageContext.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/GWMessageContext.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/server/GWSOutputQueue.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/GWSOutputQueue.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/server/GWServerConnector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/GWServerConnector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/server/ServerAnswer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/server/ServerAnswer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/CSVSensorDataFormatter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/util/CSVSensorDataFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/ChecksumSensorDataFormatter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/util/ChecksumSensorDataFormatter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/util/ChecksumSensorDataParser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/util/ChecksumSensorDataParser.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/util/ColorBrightness.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util/ColorBrightness.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/DataIterator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/DataReader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util/DataReader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/DataWriter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util/DataWriter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/JSONSensorDataFormatter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/util/JSONSensorDataFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/JSONSensorDataParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util/JSONSensorDataParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/Journal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util/Journal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/NullSensorDataFormatter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/util/NullSensorDataFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/SensorDataFormatter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util/SensorDataFormatter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/SensorDataParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util/SensorDataParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/TypeMappingParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/XmlTypeMappingParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/util/XmlTypeMappingParserHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/util/XmlTypeMappingParserHelper.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/vdev/VirtualDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vdev/VirtualDevice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/vdev/VirtualDeviceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vdev/VirtualDeviceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/vdev/VirtualModule.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vdev/VirtualModule.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTBoilerModuleType.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTBoilerModuleType.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTDevice.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTDevice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTDeviceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTDeviceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTValuesParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTValuesParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTZoneModuleType.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/vpt/VPTZoneModuleType.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/AbstractZWaveNetwork.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/AbstractZWaveNetwork.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/AeotecZWaveMapperRegistry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/AeotecZWaveMapperRegistry.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/ClimaxZWaveMapperRegistry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/ClimaxZWaveMapperRegistry.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/CompositeZWaveMapperRegistry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/CompositeZWaveMapperRegistry.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/FibaroZWaveMapperRegistry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/FibaroZWaveMapperRegistry.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/GenericZWaveMapperRegistry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/GenericZWaveMapperRegistry.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/OZWCommand.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/OZWCommand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/OZWNetwork.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/OZWNetwork.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/OZWNotificationEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/OZWNotificationEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/OZWPocoLoggerAdapter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/OZWPocoLoggerAdapter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ST02L1ZWaveMapperRegistry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/ST02L1ZWaveMapperRegistry.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/SpecificZWaveMapperRegistry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/SpecificZWaveMapperRegistry.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveDeviceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveDeviceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveDriverEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveDriverEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveListener.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveListener.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveMapperRegistry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveMapperRegistry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveNetwork.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveNetwork.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveNodeEvent.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveNodeEvent.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveNodeInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveNodeInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveSerialProber.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveSerialProber.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveTypeMappingParser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/zwave/ZWaveTypeMappingParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="test/bluetooth/BLESmartDeviceTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/bluetooth/GlibPtrTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/bluetooth/HciInterfaceTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/core/AnswerQueueTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/core/CommandDispatcherTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/core/DeviceStatusFetcherTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/core/DongleDeviceManagerTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/core/ExporterQueueTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/core/FilesystemDeviceCacheTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/core/MemoryDeviceCacheTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/core/QueuingDistributorTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/core/QueuingExporterTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/credentials/CredentialsStorageTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/credentials/CredentialsTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/exporters/JournalQueuingStrategyTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/exporters/RecoverableJournalQueuingStrategyTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/fitp/FitpDeviceTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/iqrf/DPARequestTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/iqrf/DPAResponseTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/iqrf/IQRFJsonMessageTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/jablotron/JablotronGadgetTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/jablotron/JablotronReportTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/util/CSVSensorDataFormatterTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/util/ColorBrightnessTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/util/DataReaderTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/util/DataWriterTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/util/JSONSensorDataFormatterTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/util/JSONSensorDataParserTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/util/JournalTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/util/XmlTypeMappingParserTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/vpt/VPTDeviceTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/zwave/AbstractZWaveNetworkTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/zwave/GenericZWaveMapperRegistryTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="test/zwave/ZWaveNodeTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="test/zwave/ZWaveTypeMappingParserTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

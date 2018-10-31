@@ -1,0 +1,117 @@
+<system>
+	<factory>
+		<instance name="main" class="BeeeOn::LoopRunner">
+			<add name="loops" ref="gwServerConnector" if-yes="${gws.enable}"/>
+			<add name="runnables" ref="testingCenter" if-yes="${testing.center.enable}" />
+			<add name="runnables" ref="hotplugMonitor" />
+			<add name="runnables" ref="asyncExecutor" />
+			<add name="runnables" ref="mqttGWExporterClient" if-yes="${exporter.mqtt.enable}" />
+			<add name="runnables" ref="distributor" />
+			<add name="loops" ref="managersRunner" />
+			<add name="runnables" ref="deviceStatusFetcher" />
+		</instance>
+
+		<instance name="applicationInstanceChecker" class="BeeeOn::SingleInstanceChecker" init="early">
+			<set name="name" text="${application.instance.id}" />
+			<set name="mode" text="${application.instance.mode}" />
+		</instance>
+
+		<instance name="gatewayInfo" class="BeeeOn::GatewayInfo" init="early">
+			<set name="certificatePath" text="${ssl.certificate}" />
+			<set name="keyPath" text="${ssl.key}" />
+			<set name="gatewayID" text="${gateway.id}" if-yes="${gateway.id.enable}"/>
+		</instance>
+
+		<instance name="distributor" class="BeeeOn::QueuingDistributor">
+			<add name="exporters" ref="namedPipeExporter" if-yes="${exporter.pipe.enable}"/>
+			<add name="exporters" ref="mosquittoExporter" if-yes="${exporter.mqtt.enable}"/>
+			<add name="exporters" ref="gwServerConnector" if-yes="${gws.enable}" />
+			<set name="eventsExecutor" ref="asyncExecutor"/>
+			<add name="listeners" ref="loggingCollector" if-yes="${testing.collector.enable}" />
+		</instance>
+
+		<instance name="asyncExecutor" class="BeeeOn::SequentialAsyncExecutor">
+		</instance>
+
+		<instance name="commandsExecutor" class="BeeeOn::ParallelExecutor">
+		</instance>
+
+		<instance name="commandDispatcher" class="BeeeOn::AsyncCommandDispatcher">
+			<set name="eventsExecutor" ref="asyncExecutor"/>
+			<set name="commandsExecutor" ref="commandsExecutor"/>
+			<add name="handlers" ref="gwServerConnector" if-yes="${gws.enable}"/>
+			<add name="handlers" ref="testingCenter" if-yes="${testing.center.enable}"/>
+			<add name="handlers" ref="belkinwemoDeviceManager" if-yes="${belkinwemo.enable}"/>
+			<add name="handlers" ref="bluetoothAvailability" if-yes="${bluetooth.availability.enable}" />
+			<add name="handlers" ref="bleSmartDeviceManager" if-yes="${blesmart.enable}" />
+			<add name="handlers" ref="jablotronDeviceManager" if-yes="${jablotron.enable}"/>
+			<add name="handlers" ref="philipsHueDeviceManager" if-yes="${philipshue.enable}"/>
+			<add name="handlers" ref="virtualDeviceManager" if-yes="${vdev.enable}"/>
+			<add name="handlers" ref="vptDeviceManager" if-yes="${vpt.enable}"/>
+			<add name="handlers" ref="pressureSensorManager" if-yes="${psdev.enable}"/>
+			<add name="listeners" ref="loggingCollector" if-yes="${testing.collector.enable}" />
+			<add name="handlers" ref="fitpDeviceManager" if-yes="${fitp.enable}"/>
+			<add name="handlers" ref="zwaveDeviceManager" if-yes="${zwave.enable}"/>
+		</instance>
+
+		<instance name="deviceStatusFetcher" class="BeeeOn::DeviceStatusFetcher">
+			<set name="idleDuration" time="30 m" />
+			<set name="waitTimeout" time="1 s" />
+			<set name="repeatTimeout" time="5 m" />
+			<set name="commandDispatcher" ref="commandDispatcher" />
+			<add name="handlers" ref="zwaveDeviceManager" if-yes="${zwave.enable}" />
+			<add name="handlers" ref="virtualDeviceManager" if-yes="${vdev.enable}" />
+			<add name="handlers" ref="pressureSensorManager" if-yes="${psdev.enable}" />
+			<add name="handlers" ref="fitpDeviceManager" if-yes="${fitp.enable}" />
+			<add name="handlers" ref="belkinwemoDeviceManager" if-yes="${belkinwemo.enable}" />
+			<add name="handlers" ref="philipsHueDeviceManager" if-yes="${philipshue.enable}" />
+			<add name="handlers" ref="vptDeviceManager" if-yes="${vpt.enable}" />
+			<add name="handlers" ref="bluetoothAvailability" if-yes="${bluetooth.availability.enable}" />
+			<add name="handlers" ref="jablotronDeviceManager" if-yes="${jablotron.enable}" />
+			<add name="handlers" ref="bleSmartDeviceManager" if-yes="${blesmart.enable}" />
+		</instance>
+
+		<instance name="testingConsole" class="BeeeOn::TCPConsole">
+			<set name="address" text="${testing.center.tcp.address}" />
+			<set name="port" number="${testing.center.tcp.port}" />
+			<set name="recvTimeout" time="0" />
+		</instance>
+
+		<instance name="testingCenter" class="BeeeOn::TestingCenter">
+			<set name="commandDispatcher" ref="commandDispatcher" />
+			<set name="pairedDevices" list="${testing.center.pairedDevices}" />
+			<set name="console" ref="testingConsole" />
+			<set name="credentialsStorage" ref="credentialsStorage" />
+			<set name="cryptoConfig" ref="cryptoConfig" />
+		</instance>
+
+		<instance name="credentialsStorage" class="BeeeOn::FileCredentialsStorage" init="early">
+			<set name="file" text="${credentials.file}" />
+			<set name="configurationRoot" text="${credentials.configuration.root}" />
+			<set name="saveDelayTime" time="${credentials.save.delay}" />
+		</instance>
+
+		<instance name="cryptoConfig" class="BeeeOn::CryptoConfig">
+			<set name="passphrase" text="${credentials.crypto.passphrase}" />
+			<set name="algorithm" text="${credentials.crypto.algorithm}" />
+		</instance>
+
+		<instance name="loggingCollector" class="BeeeOn::LoggingCollector" />
+
+		<instance name="credentialsTool" class="BeeeOn::CredentialsTool">
+			<set name="cryptoConfig" ref="cryptoConfig" />
+			<set name="storage" ref="credentialsStorage" />
+			<set name="cmd" text="${tool.credentials.cmd}" />
+		</instance>
+
+		<instance name="ramDeviceCache" class="BeeeOn::MemoryDeviceCache">
+			<set name="prepaired" list="" />
+		</instance>
+
+		<instance name="fsDeviceCache" class="BeeeOn::FilesystemDeviceCache">
+			<set name="cacheDir" text="${cache.devices.dir}" />
+		</instance>
+
+		<alias name="deviceCache" ref="${cache.devices.impl}DeviceCache" />
+	</factory>
+</system>
