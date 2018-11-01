@@ -17,22 +17,71 @@ BEEEON_OBJECT_CASTABLE(CommandHandler)
 BEEEON_OBJECT_CASTABLE(StoppableRunnable)
 BEEEON_OBJECT_CASTABLE(HotplugListener)
 BEEEON_OBJECT_CASTABLE(DeviceStatusHandler)
-BEEEON_OBJECT_PROPERTY("deviceCache", &LoRaDeviceManager::setDeviceCache)
 BEEEON_OBJECT_END(BeeeOn, LoRaDeviceManager)
 
 using namespace BeeeOn;
 using namespace Poco;
 using namespace std;
 
+void LoRaDeviceManager::setAbpAuthMethod(bool m)
+{
+	m_abpAuthMethod = m;
+}
 
+void LoRaDeviceManager::setMaxProbeAttempts(int count)
+{
+	m_controller.setMaxProbeAttempts(count);
+}
 
+void LoRaDeviceManager::run()
+{
+	UnsafePtr<Thread>(Thread::current())->setName("reporting");
 
+	StopControl::Run run(m_stopControl);
 
+	while (run) {
+		try {
+			const auto report = m_controller.pollReport(-1);
+			if (!report)
+				continue;
 
+			if (logger().debug()) {
+				logger().debug(
+					"shipping report " + report.toString(),
+					__FILE__, __LINE__);
+			}
 
+			const auto id = buildID(report.address);
 
+			if (!deviceCache()->paired(id)) {
+				if (logger().debug()) {
+					logger().debug(
+						"skipping report from unpaired device " + id.toString(),
+						__FILE__, __LINE__);
+				}
 
+				continue;
+			}
 
+			shipReport(report);
+		}
+		BEEEON_CATCH_CHAIN(logger())
+	}
+}
+
+void LoRaDeviceManager::stop()
+{
+	answerQueue().dispose();
+	DeviceManager::stop();
+	m_controller.dispose();
+}
+
+// TODO initDongle
+
+// Set your DevAddr, NwkSKey, AppSKey
+const char *devAddr = "00000000";
+const char *nwkSKey = "00000000000000000000000000000000";
+const char *appSKey = "00000000000000000000000000000000";
 
 void LoRaDeviceManager::onAdd(const LoRaPacketTools &p)
 {
@@ -50,16 +99,4 @@ void LoRaDeviceManager::onRemove(const LoRaDevice &e)
 		return;
 
 	m_controller.release(dev);
-}
-
-
-void JablotronDeviceManager::newDevice(
-		const DeviceID &id,
-		const string &name,
-		const list<ModuleType> &types,
-		const Timespan &refreshTime)
-{
-	NewDeviceCommand::Ptr cmd = new NewDeviceCommand(
-		id, "Jablotron", name, types, refreshTime);
-	dispatch(cmd);
 }
